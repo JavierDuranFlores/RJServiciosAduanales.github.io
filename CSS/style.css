@@ -2,6 +2,12 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size:15px;
@@ -89,4 +95,63 @@ h1 span{
     right:0;
     width:500px;
     height:320px;
+}
+
+.pagina-inicio .contenido .texto .leer-mas{
+    width:183px;
+    height:47px;
+    margin:50px auto;
+    line-height:47px;
+    border:1px solid white;
+    text-transform:uppercase;
+    color:white;
+    cursor:pointer;
+    font-size:19px;
+    background:none;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+  
+.pagina-inicio .contenido .texto .leer-mas:hover{
+    color:black;
+    background:#2fa65d;
+}
+  
+.pagina-inicio .contenido .flecha-abajo{
+    position: absolute;
+    bottom: 110px;
+    left: 50%;
+    margin-left: -10px;
+    width: 21px;
+    height: 29px;
+    background: url(../img/flecha-abajo.png) no-repeat center center;
+    display: block;
+    -webkit-animation: bounce-fade 1.2s infinite;
+    -moz-animation:    bounce-fade 1.2s infinite;
+    -o-animation:      bounce-fade 1.2s infinite;
+     animation:        bounce-fade 1.2s infinite;
+}
+  
+  
+@-webkit-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 70px; }
+    100% { opacity: 1; bottom: 35px; }
+}
+  
+@-moz-keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 70px; }
+    100% { opacity: 1; bottom: 35px; }
+}
+
+@-o-keyframes bounce-fade {
+    0%   { opacity: 0; bottom:70px; }
+    100% { opacity: 1; bottom: 35px; }
+}
+  
+@keyframes bounce-fade {
+    0%   { opacity: 0; bottom: 70px; }
+    100% { opacity: 1; bottom: 35px; }
 }
