@@ -155,3 +155,41 @@ h1 span{
     0%   { opacity: 0; bottom: 70px; }
     100% { opacity: 1; bottom: 35px; }
 }
+
+/* Menu */
+
+.menu{
+    position:relative;
+    width:100%;
+    height:90px;
+    background:#2f363e;
+    z-index:1000;
+}
+  
+.menu-contenido{
+    width:900px;
+    position:relative;
+    margin:0 auto;
+}
+  
+.menu-contenido .logo {
+    color: #a3b2c0;
+    background:#2f363e;
+    font-weight:700;
+    font-size:27px;
+    font-family: 'Patrick Hand', cursive;   
+    width:300px;
+    line-height:90px;
+    float:left;
+    list-style: none;
+}
+  
+.menu-contenido .logo:hover {
+    color: #2fa65d;
+    background:#2f363e;
+}
+  
+  
+.menu-click{
+    display:none;
+}
